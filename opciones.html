@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Elige una categoria</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+
+
+</head>
+
+<body>
+
+    <div class="col-xs-1" align="center">
+
+        <div class="tituloPrincipal">
+
+            <h1 id="categoria"> </h1>
+            <h4> Elije una categoria para jugar!! </h4>
+
+
+
+        </div>
+
+        <div class="col-xs-1" align="center" style="margin-right:80px; margin-top: 20px">
+
+
+            <button type="button" class="btn btn-primary btn-lg" id="btnMaquillaje"
+                style="border-color: dimgray; background-color: dimgray">MAQUILLAJE</button>
+
+
+
+            <button type="button" class="btn btn-primary btn-lg" id="btnIngles"
+                style="border-color: dimgray; background-color: dimgray">INGLES</button>
+
+        </div>
+
+
+
+    </div>
+
+    <script>
+
+        let parametro = new URLSearchParams(location.search);
+
+        let nombre = parametro.get("name");
+
+        document.getElementById("categoria").innerHTML = nombre + "  bienvenid@ ♥";
+
+        
+    // dandole funcionalidad a los botones de la pantalla opciones con el evento addEventListener
+
+        let btnMaquillaje = document.getElementById("btnMaquillaje");
+
+
+        btnMaquillaje.addEventListener("click", () => {
+
+            window.location.href = "maquillaje.html?nombre=" + nombre + "&categoria=maquillaje";
+
+        })
+
+
+        let btnIngles= document.getElementById("btnIngles");
+
+        btnIngles.addEventListener("click", () => {
+
+            window.location.href = "ingles.html?nombre=" + nombre + "&categoria=ingles";
+
+        })
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

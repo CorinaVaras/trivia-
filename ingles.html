@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="app3.js"></script>
+	<link rel="stylesheet" href="style.css" type="text/css" /> 
+
+
+</head>
+
+<body style="margin-right:50px; margin-left:50px">
+
+
+	<div class="col-xs-1" align="center" id="preguntas1">
+
+		<div class="tituloPrincipal">
+
+			<h1>INGLES</h1>
+
+
+		</div>
+
+
+	</div>
+
+	<div style="margin-top:30px " id="preguntas2">
+
+		<div style="background-color: azure; display: inline-block; width: 350px;">
+			<h2 style="margin-bottom: 20px;"> Pregunta 1 </h2>
+			<h5 style="margin-bottom: 10px;">¿Cómo se dice "Hola" en ingles?</h5>
+			<h6>Selecciona tu respuesta</h6>
+
+			<div class="custom-control custom-radio">
+				<input type="radio" class="custom-control-input" id="pregunta1Radio1" name="radioButton1">
+				<label class="custom-control-label" for="pregunta1Radio1">Hello</label>
+			</div>
+
+
+			<div class="custom-control custom-radio">
+				<input type="radio" class="custom-control-input" id="pregunta1Radio2" name="radioButton1">
+				<label class="custom-control-label" for="pregunta1Radio2">Thank you</label>
+			</div>
+
+
+			<div class="custom-control custom-radio">
+				<input type="radio" class="custom-control-input" id="pregunta1Radio3" name="radioButton1">
+				<label class="custom-control-label" for="pregunta1Radio3">Bye</label>
+			</div>
+
+		</div>
+
+		<div style="background-color: azure; display: inline-block; width: 350px;">
+			<h2 style="margin-bottom: 20px;"> Pregunta 2 </h2>
+			<h5 style="margin-bottom: 10px;">¿Cómo se dice "Perro" en inglés?</h5>
+			<h6>Selecciona tu respuesta</h6>
+
+			<div class="custom-control custom-radio">
+				<input type="radio" class="custom-control-input" id="pregunta2Radio1" name="radioButton2">
+				<label class="custom-control-label" for="pregunta2Radio1">Dog</label>
+			</div>
+
+
+			<div class="custom-control custom-radio">
+				<input type="radio" class="custom-control-input" id="pregunta2Radio2" name="radioButton2">
+				<label class="custom-control-label" for="pregunta2Radio2">Cat</label>
+			</div>
+
+
+			<div class="custom-control custom-radio">
+				<input type="radio" class="custom-control-input" id="pregunta2Radio3" name="radioButton2">
+				<label class="custom-control-label" for="pregunta2Radio4">Rabbit</label>
+			</div>
+
+		</div>
+
+		<div style="background-color: azure; display: inline-block; width: 350px;">
+			<h2 style="margin-bottom: 20px;"> Pregunta 3 </h2>
+			<h5 style="margin-bottom: 10px;">¿Cómo se dice "Mamá" en inglés?</h5>
+			<h6>Selecciona tu respuesta</h6>
+
+			<div class="custom-control custom-radio">
+				<input type="radio" class="custom-control-input" id="pregunta3Radio1" name="radioButton3">
+				<label class="custom-control-label" for="pregunta3Radio1">Mother</label>
+			</div>
+
+
+			<div class="custom-control custom-radio">
+				<input type="radio" class="custom-control-input" id="pregunta3Radio2" name="radioButton3">
+				<label class="custom-control-label" for="pregunta3Radio2">Father</label>
+			</div>
+
+
+			<div class="custom-control custom-radio">
+				<input type="radio" class="custom-control-input" id="pregunta3Radio3" name="radioButton3">
+				<label class="custom-control-label" for="pregunta3Radio3">Sister</label>
+			</div>
+
+
+		</div>
+
+
+
+		<div>
+			<button type="button" class="btn btn-outline-secondary" onclick="enviarResultado()" style="margin-top:30px">
+				FINALIZAR </button>
+
+		</div>
+
+
+
+
+	</div>
+
+	<!-- la propiedad hidden es para ocultar este elemeto div -->
+	<div class="col-xs-1" align="center" id="pantallaFinal" hidden>
+
+		<div class="col-xs-1" align="center"
+			style="margin-right:80px; margin-top:60px; padding:10px; background-image: url(https://img-cdn.hipertextual.com/files/2017/03/color-degradado-fondos-degradados-multicolor-51200.jpg?strip=all&lossy=1&quality=57&resize=740%2C490&ssl=1); background-size: 100%;">
+
+			<h1> Resultados </h1>
+
+
+			<h2 id="textoFinal"> Ganaste/Perdiste</h2>
+
+
+		</div>
+
+
+
+		<div class="col-xs-1" align="center" style="margin-right:80px; margin-top: 20px">
+			<button type="button" class="btn btn-primary btn-lg" onclick="location.href='index.html'"
+				style="border-color: dimgray; background-color: dimgray">Volver al inicio</button>
+
+			<button type="button" class="btn btn-primary btn-lg" onclick="location.href='opciones.html'"
+				style="border-color: dimgray; background-color: dimgray">Volver a jugar</button>
+
+		</div>
+
+
+
+
+
+</body>
+
+</html>
